@@ -5,6 +5,6 @@
     method: post
     url: /cgi-bin/media/uploadimg?access_token=${read_extract_yaml(access_token)}
     files:
-       media: ./testfile/img/seola.jpg
+       media: ./testfile/img/20231025181843.png
   validate:
     - equals: {status_code: 200}

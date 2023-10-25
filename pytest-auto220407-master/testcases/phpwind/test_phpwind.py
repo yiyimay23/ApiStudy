@@ -1,10 +1,8 @@
 #!C:\pythonCode
 # -*- coding: utf-8 -*-
-# @Time : 2022/4/15 17:01
-# @Author :天草柑橘
 # @File : test_phpwind.py
 # @Software: PyCharm
-import re
+# import re
 
 import allure
 import pytest
@@ -20,10 +18,10 @@ class TestPhpwind:
 
     @allure.story("访问phpwind论坛首页")
     @pytest.mark.parametrize("caseinfo", read_testcase_yaml("./testcases/phpwind/index.yaml"))
-    def test_phpwind_index(self,caseinfo):
+    def test_phpwind_index(self, caseinfo):
         res = RequestsUtil(PhpwindFun()).standard_yaml(caseinfo)
 
     @allure.story("phpwind论坛登录接口")
     @pytest.mark.parametrize("caseinfo", read_testcase_yaml("./testcases/phpwind/login.yaml"))
-    def test_phpwind_login(self,caseinfo):
+    def test_phpwind_login(self, caseinfo):
         res = RequestsUtil(PhpwindFun()).standard_yaml(caseinfo)

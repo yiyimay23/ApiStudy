@@ -1,7 +1,5 @@
 #!C:\pythonCode
 # -*- coding: utf-8 -*-
-# @Time : 2022/4/19 11:37
-# @Author :天草柑橘
 # @File : conftest.py
 # @Software: PyCharm
 import pytest

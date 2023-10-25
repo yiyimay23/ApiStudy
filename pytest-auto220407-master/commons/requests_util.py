@@ -1,7 +1,5 @@
 #!C:\pythonCode
 # -*- coding: utf-8 -*-
-# @Time : 2022/4/18 15:38
-# @Author :天草柑橘
 # @File : requests_util.py
 # @Software: PyCharm
 import json
@@ -12,7 +10,8 @@ import jsonpath
 import requests
 
 from commons.logger_util import error_log, logs
-from commons.yaml_util import read_config_yaml, write_extract_yaml
+from commons.yaml_util import write_extract_yaml
+# from commons.yaml_util import read_config_yaml
 
 
 class RequestsUtil:
@@ -38,7 +37,7 @@ class RequestsUtil:
                     method = caseinfo['request'].pop("method")
                     url = caseinfo['request'].pop("url")
                     # 发送请求
-                    res = self.send_request(name,method, base_url + url, **caseinfo['request'])
+                    res = self.send_request(name, method, base_url + url, **caseinfo['request'])
                     result_text = res.text
                     result_code = res.status_code
                     result_json = ""

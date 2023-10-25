@@ -1,7 +1,5 @@
 #!C:\pythonCode
 # -*- coding: utf-8 -*-
-# @Time : 2022/4/13 16:33
-# @Author :天草柑橘
 # @File : test_wx.py
 # @Software: PyCharm
 

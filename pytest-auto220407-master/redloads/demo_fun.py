@@ -1,7 +1,5 @@
 #!C:\pythonCode
 # -*- coding: utf-8 -*-
-# @Time : 2022/6/7 11:34
-# @Author :天草柑橘
 # @File : demo_fun.py.py
 # @Software: PyCharm
 
@@ -9,6 +7,7 @@
 import yaml
 
 from commons.yaml_util import get_object_path
+
 
 class DemoFun:
 

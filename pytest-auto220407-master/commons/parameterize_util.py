@@ -1,12 +1,9 @@
 #!C:\pythonCode
 # -*- coding: utf-8 -*-
-# @Time : 2022/6/2 17:27
-# @Author :天草柑橘
-# @File : parameterize_util.py.py
+# @File : parameterize_util.py
 # @Software: PyCharm
 import json
 from builtins import isinstance, range, len, int, float, open, dict
-
 import yaml
 
 # 读取测试用例yaml文件
@@ -16,7 +13,7 @@ from commons.yaml_util import get_object_path, read_data_yaml
 def read_testcase_yaml(yaml_path):
     with open(get_object_path() + yaml_path, 'r', encoding='utf-8') as f:
         caseinfo = yaml.load(stream=f, Loader=yaml.FullLoader)
-        #单纯复制修改参数的模式
+        # 单纯复制修改参数的模式
         if len(caseinfo) >= 2:
             return caseinfo
         else:  # 有数据驱动的场合
@@ -33,10 +30,10 @@ def ddt(caseinfo):
         for param_key, param_value in caseinfo["parameterize"].items():
             key_list = param_key.split("-")
             print("------key和value------")
-            print(key_list,param_value)
+            print(key_list, param_value)
             length_flag = True
             print("------data数据列表------")
-            #规范yaml数据文件的写法
+            # 规范yaml数据文件的写法
             data_list = read_data_yaml(param_value)
             for data in data_list:
                 print(data)

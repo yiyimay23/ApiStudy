@@ -1,7 +1,5 @@
 #!C:\pythonCode
 # -*- coding: utf-8 -*-
-# @Time : 2022/5/18 15:01
-# @Author :天草柑橘
 # @File : logger_util.py.py
 # @Software: PyCharm
 import logging
@@ -65,14 +63,16 @@ class LoggerUtil:
             # 将控制台日志的控制器加入到日志对象
             self.logger.addHandler(self.console_hander)
 
-        #返回包含有文件日志控制器和控制台控制器的日志对象
+        # 返回包含有文件日志控制器和控制台控制器的日志对象
         return self.logger
 
-#错误日志的输出
+
+# 错误日志的输出
 def error_log(message):
     LoggerUtil().create_log().error(message)
     raise Exception(message)
 
-#信息日志的输出
+
+# 信息日志的输出
 def logs(message):
     LoggerUtil().create_log().info(message)
