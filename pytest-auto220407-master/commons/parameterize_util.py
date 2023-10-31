@@ -51,7 +51,7 @@ def ddt(caseinfo):
                             # 替换原始的yaml里面的$ddt{}
                             # 数字类型去掉“”
                             if isinstance(data_list[x][y], int) or isinstance(data_list[x][y], float):
-                                temp_caseinfo = temp_caseinfo.replace('"$ddt{'+data_list[0][y]+'}"',str(data_list[x][y]))
+                                temp_caseinfo = temp_caseinfo.replace('"$ddt{'+data_list[0][y]+'}"', str(data_list[x][y]))
                             else:
                                 temp_caseinfo = temp_caseinfo.replace("$ddt{"+data_list[0][y]+"}", str(data_list[x][y]))
                     print(temp_caseinfo)

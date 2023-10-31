@@ -147,7 +147,7 @@ class RequestsUtil:
     def assert_result(self, yq_result, sj_result, result_code):
         try:
             logs("预期结果：%s" % yq_result)
-            logs("实际结果：%s" % json.loads(json.dumps(sj_result).replace(r"\\","\\")))
+            logs("实际结果：%s" % json.loads(json.dumps(sj_result).replace(r"\\", "\\")))
             all_flag = 0
             for yq in yq_result:
                 for key, value in yq.items():
