@@ -1,9 +1,0 @@
-INFO     log:logger_util.py:78 --------接口测试开始--------
-INFO     log:logger_util.py:78 请求名称：成功获取鉴权码token
-INFO     log:logger_util.py:78 请求方式：get
-INFO     log:logger_util.py:78 请求路径：https://api.weixin.qq.com/cgi-bin/token
-INFO     log:logger_util.py:78 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx74a8627810cfa308', 'secret': 'e40a02f9d79a8097df497e6aaf93ab80'}
-INFO     log:logger_util.py:78 预期结果：[{'equals': {'status_code': 200}}, {'contains': 'access_token'}]
-INFO     log:logger_util.py:78 实际结果：{'access_token': '74_hd7bw2-UkrGJVT2oGnzB9z-j7a761SzRgVY2A2v6HT4fk8wzFjOZT1Hhpv79CYRXOMBv2G43ymt1HdVs2cs27lxWFO_po9NOJAteddBYVQ2whM9lLPLXYMgYTRISBJfAJAHQY', 'expires_in': 7200}
-INFO     log:logger_util.py:78 接口测试成功
-INFO     log:logger_util.py:78 --------接口测试结束--------

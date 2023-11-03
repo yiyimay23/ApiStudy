@@ -1,8 +1,0 @@
-INFO     log:logger_util.py:78 --------接口测试开始--------
-INFO     log:logger_util.py:78 请求名称：成功获取一言名句
-INFO     log:logger_util.py:78 请求方式：get
-INFO     log:logger_util.py:78 请求路径：https://api.apiopen.top/api/sentences
-INFO     log:logger_util.py:78 预期结果：[{'equals': {'status_code': 200}}, {'contains': 'result'}, {'contains': '成功!'}]
-INFO     log:logger_util.py:78 实际结果：{'code': 200, 'message': '成功!', 'result': {'name': '夜凉枕簟已知秋，更听寒蛩促机杼。', 'from': '苏轼《木兰花令·梧桐叶上三更雨》'}}
-INFO     log:logger_util.py:78 接口测试成功
-INFO     log:logger_util.py:78 --------接口测试结束--------

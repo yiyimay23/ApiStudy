@@ -1,9 +1,0 @@
-INFO     log:logger_util.py:78 --------接口测试开始--------
-INFO     log:logger_util.py:78 请求名称：文件上传
-INFO     log:logger_util.py:78 请求方式：post
-INFO     log:logger_util.py:78 请求路径：https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=74_hd7bw2-UkrGJVT2oGnzB9z-j7a761SzRgVY2A2v6HT4fk8wzFjOZT1Hhpv79CYRXOMBv2G43ymt1HdVs2cs27lxWFO_po9NOJAteddBYVQ2whM9lLPLXYMgYTRISBJfAJAHQY
-INFO     log:logger_util.py:78 请求files参数：{'media': <_io.BufferedReader name='./testfile/img/20231025181843.png'>}
-INFO     log:logger_util.py:78 预期结果：[{'equals': {'status_code': 200}}]
-INFO     log:logger_util.py:78 实际结果：{'url': 'http://mmbiz.qpic.cn/mmbiz_png/GXkibaAlg9hicw4VHShqqDYBH0rebhdupb5ibL6UJbVibMqcicXIwEPsYELYm0BDdCMQN1LaINnzX6B9qPG1WcpkNkg/0'}
-INFO     log:logger_util.py:78 接口测试成功
-INFO     log:logger_util.py:78 --------接口测试结束--------
